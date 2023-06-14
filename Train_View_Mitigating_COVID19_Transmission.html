@@ -1,0 +1,107 @@
+{% extends 'SProvider/design1.html' %}
+{% block researchblock %}
+
+
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+
+
+		<style>
+			body {background-color:#000000;}
+			.container-fluid {padding:50px;}
+			.container{background-color:white;padding:50px;   }
+			#title{font-family: 'Fredoka One', cursive;
+}
+			.text-uppercase{
+			font-family: 'Righteous', cursive;
+
+			}
+			.tweettext{
+
+    border: 2px solid yellowgreen;
+    width: 1104px;
+    height: 442px;
+    overflow: scroll;
+    background-color:;
+}
+		.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+        .style9 {color: #FFFF00}
+        .style10 {font-weight: bold; color: #FFFF00; }
+        </style>
+
+	<body>
+	<div class="container-fluid">
+		<div>
+
+			<div class="row">
+				<div class="col-md-5">
+ 					<form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+							<p class="text-uppercase pull-center style1">Train & View Mitigating COVID19 Transmission  !!! </p>
+                            <hr>
+                            <div >
+                                <table border="5" bordercolor="#FF00FF">
+
+
+                          <tr><td bgcolor="#FF0000"><span class="style8">Scholl_Code</span></td>
+                        <td bgcolor="#FF0000"><span class="style8">School_Name</span></td>
+                        <td bgcolor="#FF0000"><span class="style8">Scholl_Type</span></td>
+                        <td bgcolor="#FF0000"><span class="style8">Function</span></td>
+                        <td bgcolor="#FF0000"><span class="style8">Contact_Name</span></td>
+                              <td bgcolor="#FF0000"><span class="style8">Address</span></td>
+                        <td bgcolor="#FF0000"><span class="style8">Town</span></td>
+                        <td bgcolor="#FF0000"><span class="style8">Zip</span></td>
+                        <td bgcolor="#FF0000"><span class="style8">Phone</span></td>
+                        <td bgcolor="#FF0000"><span class="style8">Number_Of_Children</span></td>
+                        <td bgcolor="#FF0000"><span class="style8">Oxigen_level</span></td>
+                        <td bgcolor="#FF0000"><span class="style8">Fever</span></td>
+
+                              <td bgcolor="#FF0000"><span class="style8">Covid19 Mitigating Status</span></td>
+                      </tr>
+                            {% for object in list_objects %}
+                      <tr>
+
+                          <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Scholl_Code}}</div></td>
+                        <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.names}}</div></td>
+                        <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Scholl_Type}}</div></td>
+                        <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Function1}}</div></td>
+                        <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Contact_Name}}</div></td>
+                        <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Address}}</div></td>
+                        <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Town}}</div></td>
+                        <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Zip}}</div></td>
+                        <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Phone}}</div></td>
+                        <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Number_Of_Children}}</div></td>
+                        <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Oxigen_level}}</div></td>
+                        <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Fever}}</div></td>
+                        <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Mitigating_Status}}</div></td>
+
+                      </tr>
+
+                                        {% endfor %}
+                      </table>
+
+                            </div>
+
+
+
+
+						</fieldset>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<!-------null------>
+				</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+    <tr>
