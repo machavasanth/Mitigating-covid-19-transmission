@@ -1,0 +1,50 @@
+Mitigating COVID-19 Transmission in Schools With Digital Contact Tracing
+
+Asymptomatic infection, COVID-19, digital
+contract tracing, mitigation strategy, social distancing,
+susceptible-exposed-infectious-removed (SEIR).
+
+
+IEEE Transactions on Computational Social Systems,Issue Date:28.April.2021
+
+
+Mitigating_COVID19_Transmission
+
+mitigating_cOVID19_transmission
+
+
+
+COVID19_transmission_model
+
+Scholl_Code
+names
+Scholl_Type
+Function
+Contact_Name
+Address
+Town
+Zip
+Phone
+Number_Of_Children
+Oxigen_level
+Fever
+
+Trained_COVID19_transmission_model
+
+Scholl_Code
+names
+Scholl_Type
+Function
+Contact_Name
+Address
+Town
+Zip
+Phone
+Number_Of_Children
+Oxigen_level
+Fever
+Mitigating_Status
+
+
+COVID19_transmission_model,Trained_COVID19_transmission_model,detection_ratio_model
+
